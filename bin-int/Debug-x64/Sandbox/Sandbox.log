@@ -1,4 +1,0 @@
-﻿  SandBoxApp.cpp
-D:\code\CppRepo\Hazel\Sandbox\src\SandBoxApp.cpp(17,28): warning C4273: 'Hazel::CreateApplication': inconsistent dll linkage
-     Creating library D:\code\CppRepo\Hazel\bin\Debug-x64\Sandbox\Sandbox.lib and object D:\code\CppRepo\Hazel\bin\Debug-x64\Sandbox\Sandbox.exp
-  Sandbox.vcxproj -> D:\code\CppRepo\Hazel\bin\Debug-x64\Sandbox\Sandbox.exe
