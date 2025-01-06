@@ -30,7 +30,8 @@ project "Hazel"
 
 	includedirs
 	{
-		"%{prj.name}/vender/spdlog/include"
+		"%{prj.name}/vender/spdlog/include",
+		"Hazel/src"
 	}
 
 	--filter 用于定义指定的内容，当filter被激活。范围为直至下一个filter或project
