@@ -3,18 +3,6 @@
   "WorkspaceRootPath": "D:\\code\\CppRepo\\Hazel\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{99294D0D-053E-75BE-CEBF-181E3A9371EF}|Hazel\\Hazel.vcxproj|D:\\code\\CppRepo\\Hazel\\Hazel\\src\\Hazel\\Events\\KeyEvent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{99294D0D-053E-75BE-CEBF-181E3A9371EF}|Hazel\\Hazel.vcxproj|solutionrelative:Hazel\\src\\Hazel\\Events\\KeyEvent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4C124E3-60A1-A37E-69B9-2E55D5170AE0}|Sandbox\\Sandbox.vcxproj|D:\\code\\CppRepo\\Hazel\\Sandbox\\src\\SandBoxApp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F4C124E3-60A1-A37E-69B9-2E55D5170AE0}|Sandbox\\Sandbox.vcxproj|solutionrelative:Sandbox\\src\\SandBoxApp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{99294D0D-053E-75BE-CEBF-181E3A9371EF}|Hazel\\Hazel.vcxproj|D:\\code\\CppRepo\\Hazel\\Hazel\\src\\Hazel\\Events\\ApplicationEvent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{99294D0D-053E-75BE-CEBF-181E3A9371EF}|Hazel\\Hazel.vcxproj|solutionrelative:Hazel\\src\\Hazel\\Events\\ApplicationEvent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{99294D0D-053E-75BE-CEBF-181E3A9371EF}|Hazel\\Hazel.vcxproj|D:\\code\\CppRepo\\Hazel\\Hazel\\src\\Hazel\\Events\\Event.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{99294D0D-053E-75BE-CEBF-181E3A9371EF}|Hazel\\Hazel.vcxproj|solutionrelative:Hazel\\src\\Hazel\\Events\\Event.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -33,6 +21,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{99294D0D-053E-75BE-CEBF-181E3A9371EF}|Hazel\\Hazel.vcxproj|D:\\code\\CppRepo\\Hazel\\Hazel\\src\\Hazel\\EntryPoint.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{99294D0D-053E-75BE-CEBF-181E3A9371EF}|Hazel\\Hazel.vcxproj|solutionrelative:Hazel\\src\\Hazel\\EntryPoint.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99294D0D-053E-75BE-CEBF-181E3A9371EF}|Hazel\\Hazel.vcxproj|D:\\code\\CppRepo\\Hazel\\Hazel\\src\\Hazel\\Events\\KeyEvent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{99294D0D-053E-75BE-CEBF-181E3A9371EF}|Hazel\\Hazel.vcxproj|solutionrelative:Hazel\\src\\Hazel\\Events\\KeyEvent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99294D0D-053E-75BE-CEBF-181E3A9371EF}|Hazel\\Hazel.vcxproj|D:\\code\\CppRepo\\Hazel\\Hazel\\src\\Hazel\\Events\\ApplicationEvent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{99294D0D-053E-75BE-CEBF-181E3A9371EF}|Hazel\\Hazel.vcxproj|solutionrelative:Hazel\\src\\Hazel\\Events\\ApplicationEvent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4C124E3-60A1-A37E-69B9-2E55D5170AE0}|Sandbox\\Sandbox.vcxproj|D:\\code\\CppRepo\\Hazel\\Sandbox\\src\\SandBoxApp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F4C124E3-60A1-A37E-69B9-2E55D5170AE0}|Sandbox\\Sandbox.vcxproj|solutionrelative:Sandbox\\src\\SandBoxApp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{99294D0D-053E-75BE-CEBF-181E3A9371EF}|Hazel\\Hazel.vcxproj|D:\\code\\CppRepo\\Hazel\\Hazel\\src\\Hazel\\Log.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -65,7 +65,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -78,25 +78,24 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-01-04T09:01:30.339Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Event.h",
               "DocumentMoniker": "D:\\code\\CppRepo\\Hazel\\Hazel\\src\\Hazel\\Events\\Event.h",
               "RelativeDocumentMoniker": "Hazel\\src\\Hazel\\Events\\Event.h",
               "ToolTip": "D:\\code\\CppRepo\\Hazel\\Hazel\\src\\Hazel\\Events\\Event.h",
               "RelativeToolTip": "Hazel\\src\\Hazel\\Events\\Event.h",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAADgAAAAqAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-01-06T11:02:08.279Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "Application.h",
               "DocumentMoniker": "D:\\code\\CppRepo\\Hazel\\Hazel\\src\\Hazel\\Application.h",
               "RelativeDocumentMoniker": "Hazel\\src\\Hazel\\Application.h",
@@ -104,12 +103,11 @@
               "RelativeToolTip": "Hazel\\src\\Hazel\\Application.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-01-03T09:02:13.248Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-03T09:02:13.248Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Core.h",
               "DocumentMoniker": "D:\\code\\CppRepo\\Hazel\\Hazel\\src\\Hazel\\Core.h",
               "RelativeDocumentMoniker": "Hazel\\src\\Hazel\\Core.h",
@@ -117,12 +115,11 @@
               "RelativeToolTip": "Hazel\\src\\Hazel\\Core.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-01-03T08:58:55.406Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-03T08:58:55.406Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "Application.cpp",
               "DocumentMoniker": "D:\\code\\CppRepo\\Hazel\\Hazel\\src\\Hazel\\Application.cpp",
               "RelativeDocumentMoniker": "Hazel\\src\\Hazel\\Application.cpp",
@@ -130,12 +127,11 @@
               "RelativeToolTip": "Hazel\\src\\Hazel\\Application.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-03T09:02:28.141Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-03T09:02:28.141Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "EntryPoint.h",
               "DocumentMoniker": "D:\\code\\CppRepo\\Hazel\\Hazel\\src\\Hazel\\EntryPoint.h",
               "RelativeDocumentMoniker": "Hazel\\src\\Hazel\\EntryPoint.h",
@@ -143,38 +139,35 @@
               "RelativeToolTip": "Hazel\\src\\Hazel\\EntryPoint.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-01-03T11:05:54.924Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-03T11:05:54.924Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "KeyEvent.h",
               "DocumentMoniker": "D:\\code\\CppRepo\\Hazel\\Hazel\\src\\Hazel\\Events\\KeyEvent.h",
               "RelativeDocumentMoniker": "Hazel\\src\\Hazel\\Events\\KeyEvent.h",
               "ToolTip": "D:\\code\\CppRepo\\Hazel\\Hazel\\src\\Hazel\\Events\\KeyEvent.h",
               "RelativeToolTip": "Hazel\\src\\Hazel\\Events\\KeyEvent.h",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-01-06T11:04:10.947Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-06T11:04:10.947Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "ApplicationEvent.h",
               "DocumentMoniker": "D:\\code\\CppRepo\\Hazel\\Hazel\\src\\Hazel\\Events\\ApplicationEvent.h",
               "RelativeDocumentMoniker": "Hazel\\src\\Hazel\\Events\\ApplicationEvent.h",
               "ToolTip": "D:\\code\\CppRepo\\Hazel\\Hazel\\src\\Hazel\\Events\\ApplicationEvent.h",
               "RelativeToolTip": "Hazel\\src\\Hazel\\Events\\ApplicationEvent.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADUAAAAdAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-01-06T11:04:13.72Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-06T11:04:13.72Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "SandBoxApp.cpp",
               "DocumentMoniker": "D:\\code\\CppRepo\\Hazel\\Sandbox\\src\\SandBoxApp.cpp",
               "RelativeDocumentMoniker": "Sandbox\\src\\SandBoxApp.cpp",
@@ -182,8 +175,7 @@
               "RelativeToolTip": "Sandbox\\src\\SandBoxApp.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-02T13:07:23.023Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-02T13:07:23.023Z"
             },
             {
               "$type": "Document",
