@@ -13,6 +13,11 @@ workspace "Hazel"
 -- ���Ŀ¼ ���ڿ����õ�������Ǵ洢�ڱ����У�����ʹ���˺����Զ�ȷ��ϵͳ�ܹ�����Ϣ��
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "Hazel/vendor/GLFW/include"
+include "Hazel/vendor/GLFW/"
+
 project "Hazel"
 	--ָ������������е���Ŀλ�ã��Ա��ڽ����ɵ������ļ�������ȷ��Ŀ¼��
 	location "Hazel"
@@ -22,6 +27,9 @@ project "Hazel"
 	targetdir ("bin/" ..outputdir.."/%{prj.name}")
 	objdir ("bin-int/" ..outputdir.."/%{prj.name}")
 
+	pchheader "hzpch.h"
+	pchsource "Hazel/src/hzpch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",
@@ -30,9 +38,17 @@ project "Hazel"
 
 	includedirs
 	{
-		"%{prj.name}/vender/spdlog/include",
-		"Hazel/src"
+		"%{prj.name}/vendor/spdlog/include",
+		"Hazel/src",
+		"%{IncludeDir.GLFW}"
 	}
+
+	links 
+	{
+		"GLFW",
+		"opengl32.lib"
+	}
+
 
 	--filter 用于定义指定的内容，当filter被激活。范围为直至下一个filter或project
 	filter "system:windows"
@@ -93,7 +109,7 @@ project "Sandbox"
 
 	includedirs
 	{
-		"Hazel/vender/spdlog/include",
+		"Hazel/vendor/spdlog/include",
 		"Hazel/src"
 	}
 
