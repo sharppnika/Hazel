@@ -1,0 +1,3 @@
+﻿  test.cpp
+F:\code\cpp\Hazel\test\test.cpp(16,6): warning C4326: “main”的返回类型应为“int”而非“void”
+  test.vcxproj -> F:\code\cpp\Hazel\x64\Debug\test.exe
