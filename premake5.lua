@@ -2,30 +2,35 @@
 -- workspace ��������������solution�ĸ���
 workspace "Hazel"
 	architecture "x64"
-
+	startproject "Sandbox"
+	
 	configurations
 	{
 		"Debug",
 		"Release",
 		"Dist"
 	}
-
--- ���Ŀ¼ ���ڿ����õ�������Ǵ洢�ڱ����У�����ʹ���˺����Զ�ȷ��ϵͳ�ܹ�����Ϣ��
-outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
-
--- Include directories relative to root folder (solution directory)
-IncludeDir = {}
-IncludeDir["GLFW"] = "Hazel/vendor/GLFW/include"
-IncludeDir["Glad"] = "Hazel/vendor/Glad/include"
-
-include "Hazel/vendor/GLFW/"
-include "Hazel/vendor/Glad/"
+	
+	-- ���Ŀ¼ ���ڿ����õ�������Ǵ洢�ڱ����У�����ʹ���˺����Զ�ȷ��ϵͳ�ܹ�����Ϣ��
+	outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
+	
+	-- Include directories relative to root folder (solution directory)
+	IncludeDir = {}
+	IncludeDir["GLFW"] = "Hazel/vendor/GLFW/include"
+	IncludeDir["Glad"] = "Hazel/vendor/Glad/include"
+	IncludeDir["ImGui"] = "Hazel/vendor/imgui"
+	
+	include "Hazel/vendor/GLFW/"
+	include "Hazel/vendor/Glad/"
+	include "Hazel/vendor/ImGui/"
+	
 
 project "Hazel"
 	--ָ������������е���Ŀλ�ã��Ա��ڽ����ɵ������ļ�������ȷ��Ŀ¼��
 	location "Hazel"
 	kind "SharedLib" 
 	language "C++"
+	staticruntime "off"
 
 	targetdir ("bin/" ..outputdir.."/%{prj.name}")
 	objdir ("bin-int/" ..outputdir.."/%{prj.name}")
@@ -44,13 +49,15 @@ project "Hazel"
 		"%{prj.name}/vendor/spdlog/include",
 		"Hazel/src",
 		"%{IncludeDir.GLFW}",
-		"%{IncludeDir.Glad}"
+		"%{IncludeDir.Glad}",
+		"%{IncludeDir.ImGui}"
 	}
 
 	links 
 	{
 		"GLFW",
 		"Glad",
+		"ImGui",
 		"opengl32.lib"
 	}
 
@@ -58,7 +65,6 @@ project "Hazel"
 	--filter 用于定义指定的内容，当filter被激活。范围为直至下一个filter或project
 	filter "system:windows"
 		cppdialect "C++17"
-		staticruntime "On"
 		systemversion "10.0"
 
 		-- Ԥ�����
@@ -70,8 +76,9 @@ project "Hazel"
 		}
 		postbuildcommands
 		{
-			("{MKDIR} %[bin/".. outputdir .."/Sandbox]"),
-			("{COPYFILE} %{cfg.buildtarget.relpath} ../bin/" ..outputdir.. "/Sandbox")
+			
+			--("{MKDIR} %[bin/".. outputdir .."/Sandbox]"),
+			("{COPY} %{cfg.buildtarget.relpath} \"../bin/" .. outputdir .. "/Sandbox/\"")
 		}
 
 	filter "configurations:Debug"
@@ -79,7 +86,7 @@ project "Hazel"
 		{
 			"HZ_DEBUG"
 		}
-		buildoptions "/MDd"
+		runtime "Debug"
 		symbols "On"
 
 	filter "configurations:Release"
@@ -87,7 +94,7 @@ project "Hazel"
 		{
 			"HZ_RELEASE"
 		}	
-		buildoptions "/MD"
+		runtime "Release"
 		optimize "On"
 
 	filter "configurations:Dist"
@@ -95,7 +102,7 @@ project "Hazel"
 		{
 			"HZ_Dist"
 		}
-		buildoptions "/MD"
+		runtime "Release"
 		optimize "On"
 
 	filter "action:vs*"
@@ -106,6 +113,7 @@ project "Sandbox"
 	location "Sandbox"
 	kind "ConsoleApp" 
 	language "C++"
+	staticruntime "off"
 
 	targetdir ("bin/" ..outputdir.."/%{prj.name}")
 	objdir ("bin-int/" ..outputdir.."/%{prj.name}")
@@ -130,7 +138,6 @@ project "Sandbox"
 
 	filter "system:windows"
 		cppdialect "C++17"
-		staticruntime "On"
 		systemversion "10.0"
 
 		-- Ԥ�����
@@ -145,7 +152,7 @@ project "Sandbox"
 		{
 			"HZ_DEBUG"
 		}
-		buildoptions "/MDd"
+		runtime "Debug"
 		symbols "On"
 
 	filter "configurations:Release"
@@ -153,7 +160,7 @@ project "Sandbox"
 		{
 			"HZ_RELEASE"
 		}	
-		buildoptions "/MD"
+		runtime "Release"
 		optimize "On"
 
 	filter "configurations:Dist"
@@ -161,7 +168,7 @@ project "Sandbox"
 		{
 			"HZ_Dist"
 		}
-		buildoptions "/MD"
+		runtime "Release"
 		optimize "On"
 
 	filter "action:vs*"

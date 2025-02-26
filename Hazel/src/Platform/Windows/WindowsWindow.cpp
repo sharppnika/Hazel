@@ -88,6 +88,7 @@ namespace Hazel {
 			{
 				case GLFW_PRESS:
 				{
+					HZ_CORE_INFO(key);
 					KeyPressedEvent event(key, 0);
 					data.EventCallback(event);
 					break;
@@ -108,6 +109,15 @@ namespace Hazel {
 					break;
 			}
 		});
+
+		glfwSetCharCallback(m_Window, [](GLFWwindow* window, unsigned int character)
+			{
+				WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);
+				KeyTypedEvent event(character);
+				data.EventCallback(event);
+			});
+
+
 		glfwSetMouseButtonCallback(m_Window, [](GLFWwindow* window, int buttom, int action, int mods) {
 			WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);
 			switch (action)
